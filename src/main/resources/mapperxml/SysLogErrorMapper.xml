@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springboot.study.example.mapper.SysLogErrorMapper">
+  <resultMap id="BaseResultMap" type="com.springboot.study.example.entity.SysLogError">
+    <!--@mbg.generated generated on Thu Dec 19 21:44:41 CST 2019.-->
+    <!--@Table sys_log_error-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="request_uri" jdbcType="VARCHAR" property="requestUri" />
+    <result column="request_method" jdbcType="VARCHAR" property="requestMethod" />
+    <result column="request_params" jdbcType="LONGVARCHAR" property="requestParams" />
+    <result column="user_agent" jdbcType="VARCHAR" property="userAgent" />
+    <result column="ip" jdbcType="VARCHAR" property="ip" />
+    <result column="error_info" jdbcType="LONGVARCHAR" property="errorInfo" />
+    <result column="creator" jdbcType="BIGINT" property="creator" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Thu Dec 19 21:44:41 CST 2019.-->
+    id, request_uri, request_method, request_params, user_agent, ip, error_info, creator, 
+    create_date
+  </sql>
+</mapper>
